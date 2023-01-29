@@ -1,0 +1,2 @@
+1. facade provide a static interface
+2. facade is a class that provides access to an object from the container.

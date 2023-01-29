@@ -1,5 +1,5 @@
 <?php
-
+use app\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,3 +30,4 @@ Route::group(['middleware'=>['UserCheck']],function(){
 });
 //Route::view('news','news')->middleware('UserCheck');
 Route::view('denied','denied');
+Route::get('/admin',[Admin::class,'index']);
